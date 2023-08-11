@@ -32,6 +32,8 @@ import { TextDefaultPropsType } from "@/defaultProps";
 import { mapPropsToForms, Options, PropsToForms } from "@/propsMap";
 import { reduce } from "lodash-es";
 import RenderVnode from "./RenderVnode";
+import ColorPicker from "@/components/ColorPicker.vue";
+
 interface EnentType {
   [k: string]: (e: any) => void;
 }
@@ -56,6 +58,7 @@ export default defineComponent({
   },
   components: {
     RenderVnode,
+    ColorPicker,
   },
   emits: ["change"],
   setup(props, content) {

@@ -57,10 +57,9 @@ export const mapPropsToForms: PropsToForms = {
     transformToSave: (e: number) => (e ? `${e}px` : "0px"),
   },
   color: {
-    component: "Vue3ColorPicker",
-    valueProps: "pureColor",
+    component: "ColorPicker",
+    valueProps: "value",
     text: "颜色",
-    eventName: "pureColorChange",
     transformValue: (v) => v,
   },
   lineHeight: {
